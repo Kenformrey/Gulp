@@ -1,0 +1,58 @@
+<div class="form">
+	<div class="form__container">
+		<div class="form__title title">
+			<h3>Запись на прием</h3>
+		</div>
+
+		<div class="form__body">
+			<div class="form__row">
+
+				<div class="form__column">
+					<div class="form__text">
+						<p>&laquo;Здоровье&nbsp;&mdash; это бесценный дар, данный нам природой,&nbsp;&mdash; говорит
+							профессор,&nbsp;&mdash; Сейчас современная медицина предлагает решение очень многих проблем, в&nbsp;том
+							числе
+							и&nbsp;в&nbsp;лечении сердечнососудистых заболеваний. В&nbsp;наших силах сделать очень многое&raquo;.
+							<p> Перечень жизненно необходимых и&nbsp;важнейших лекарственных препаратов, применяемых при оказании
+								стационарной
+								медицинской помощи, а&nbsp;также скорой и&nbsp;неотложной медицинской помощи бесплатно.</p>
+						</p>
+					</div>
+				</div>
+
+				<div class="form__column">
+					<form action="" method="POST" class="form__content">
+						<div class="form__line">
+							<label for="inp" class="form__label">E-mail</label>
+							<input class="input" autocomplete="off" type="email" name="form[]" data-required="email"
+								data-error="Неправильный E-mail">
+						</div>
+
+						<div class="form__line">
+							<label for="inp" class="form__label">Имя</label>
+							<input autocomplete="off" type="text" name="form[]" data-required="email" data-error="Неправильное Имя"
+								class="input">
+						</div>
+
+						<div class="form__line">
+							<label for="inp" class="form__label">Телефон</label>
+
+							<input data-inputmask="'mask': '9' , 'repeat' : 11, 'greedy' : true" class="input" name="phone"
+								placeholder="+7" autocomplete="off" data-error="Неправильный телефон" data-required="phone" type="tel"
+								id="phone">
+
+						</div>
+
+						<button type="submit" class="form__button">Отправить</button>
+					</form>
+				</div>
+
+			</div>
+
+
+
+
+
+		</div>
+	</div>
+</div>

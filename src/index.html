@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Главная"
+})
+
+<body>
+	<!--  WRAPPER -->
+	<div data-sticky class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+			<!-- ScrollBtn - кнопка листающая навверх -->
+			<a id="back-to-top" class="isShowBtn"></a>
+			<!--добавить data-fullscreen внутрь тега, который должен быть фулскрин -->
+			<div data-fullscreen class="fullscreen fullscreen__one">
+				<div class="fullscreen__body __container">
+					<h1 class="fullscreen__title">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, sapiente.</h1>
+				</div>
+
+				<div class="fullscreen__image -ibg">
+					<img src="@img/Home/bg.jpg" alt="">
+				</div>
+
+			</div>
+
+			@@include('html/_form.htm',{})
+		</main>
+		@@include('html/_footer.htm',{})
+
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+
+</body>
+
+
+</html>

@@ -1,0 +1,110 @@
+//====================================================================================================
+
+//====================================================================================================
+
+//Burger
+
+.icon-menu {
+	display: none;
+	@media (max-width: $mobile) {
+		display: block;
+		position: relative;
+		width: rem(30);
+		height: rem(18);
+		cursor: pointer;
+		z-index: 5;
+		span,
+		&::before,
+		&::after {
+			content: '';
+			transition: all 0.3s ease 0s;
+			right: 0;
+			position: absolute;
+			width: 100%;
+			height: rem(2);
+			background-color: #000;
+		}
+		&::before {
+			top: 0;
+			// top: -4px;
+		}
+		&::after {
+			bottom: 0;
+			// bottom: -4px;
+		}
+		span {
+			top: calc(50% - rem(1));
+		}
+		.menu-open & {
+			span {
+				width: 0;
+			}
+			&::before,
+			&::after {
+			}
+			&::before {
+				top: calc(50% - rem(1));
+				transform: rotate(-45deg);
+			}
+			&::after {
+				bottom: calc(50% - rem(1));
+				transform: rotate(45deg);
+			}
+			// Цвет открытого бургера (крестик)
+			// &::before,
+			// &::after {
+			// 	background-color: #000;
+			// }
+		}
+	}
+}
+
+/* Описание блока 
+	Пример открытия меню слева -> направо 
+	Пункты меню черные
+ 	Подложка меню белая
+*/
+
+/*@media (max-width: $mobile) {
+	.menu__body {
+		position: fixed;
+		overflow: auto;
+		top: 0;
+		left: -100%;
+		width: 100%;
+		height: 100%;
+		background: $white;
+		transition: 0.4s ease 0s;
+		z-index: 4;
+	}
+	.menu__body._active {
+		left: 0;
+		padding: 0;
+		&::before {
+			content: '';
+			position: fixed;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+		}
+	}
+	.menu__list {
+		position: relative;
+		text-align: left;
+		margin: 0 37px;
+		top: 7%;
+		li {
+			&:not(:last-child) {
+				margin: 0px 0px 30px 0px;
+			}
+		}
+	}
+	.menu__link {
+		flex: 1 1 auto;
+		font-size: rem(32);
+		color: #000;
+	}
+}
+*/
+
