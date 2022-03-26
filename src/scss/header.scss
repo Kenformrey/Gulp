@@ -77,7 +77,7 @@
 		transition: 0.4s ease 0s;
 		z-index: 4;
 	}
-	.menu__body._active {
+	.menu-open .menu__body {
 		left: 0;
 		padding: 0;
 		&::before {

@@ -34,12 +34,13 @@ function initSliders() {
 			// Подключаем модули слайдера
 			// для конкретного случая
 			modules: [Navigation, Mousewheel, Keyboard, Autoplay],
-			observer: true,
-			observeParents: true,
 			slidesPerView: 1,
-			spaceBetween: 0,
-			autoHeight: true,
 			speed: 800,
+			spaceBetween: 0,
+
+			observeParents: true,
+			observer: true,
+			autoHeight: true,
 
 			//touchRatio: 0,
 			//simulateTouch: false,
