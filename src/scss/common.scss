@@ -1,1 +1,24 @@
 // Заголовки, общие БЄМ блоки и проче...
+// заголовок
+
+.title {
+	color: $mainColor;
+	font-weight: 600;
+	line-height: math.div(80, 48);
+	@include adaptiveValue('font-size', 48, 24);
+	&-center {
+		text-align: center;
+	}
+	&-price {
+		font-weight: 600;
+		color: $bold;
+		line-height: math.div(48, 30);
+		@include adaptiveValue('font-size', 30, 18);
+	}
+}
+.text20 {
+	font-weight: 400;
+	line-height: math.div(30, 20);
+	@include adaptiveValue('font-size', 20, 13);
+	color: $primaryTextColor;
+}
